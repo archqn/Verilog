@@ -44,5 +44,5 @@ module ff_reference #(
     
     // wire connects data_q3 to data_o 
     assign data_o = data_q3;
-    
+
 endmodule
