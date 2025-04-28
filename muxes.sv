@@ -1,4 +1,4 @@
-// Write your modules here!
+// ece152a hw2 q9
 module muxes(
   			input a_i, b_i, c_i, d_i,
   			input logic [1:0] sel4_i,
@@ -6,7 +6,7 @@ module muxes(
 );
   wire sel2_i;
   assign sel2_i = a_i ^ b_i;
-  assign y0_o = (sel2_i) ? (c_i) : (d_i);
+  assign y0_o = (sel2_i) ? (d_i) : (c_i);
   
   always_comb begin
     case (sel4_i)
